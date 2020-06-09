@@ -91,7 +91,7 @@ if __name__ == "__main__":
         back_bev_result, _ = detect_and_draw(model, back_bevs, Tensor, False)
 
         end_time = time.time()
-        print(f"FPS: {1.0/(end_time-start_time):.2f}")
+        print("FPS: {1.0/(end_time-start_time):.2f}")
         start_time = end_time
 
         front_bev_result = cv2.rotate(front_bev_result, cv2.ROTATE_90_CLOCKWISE)
